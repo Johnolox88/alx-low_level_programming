@@ -1,11 +1,3 @@
-/**
-  *
-  *File: 3-print_alphabets.c
-  *
-  *Auth: Brennan D Baraban
-  *
-  */
-
 #include <stdio.h>
 
 /**
@@ -22,18 +14,22 @@ int main(void)
 
 {
 
-char letter;
+	char letter;
 
-for (letter = 'a'; letter <= 'z'; letter++)
 
-putchar(letter);
+	for (letter = 'a'; letter <= 'z'; letter++)
 
-for (letter = 'A'; letter <= 'Z'; letter++)
+		putchar(letter);
 
-putchar(letter);
 
-putchar('\n');
+	for (letter = 'A'; letter <= 'Z'; letter++)
 
-return (0);
+		putchar(letter);
+
+
+	putchar('\n');
+
+
+	return (0);
 
 }
