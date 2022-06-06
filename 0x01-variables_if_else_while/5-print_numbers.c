@@ -1,12 +1,5 @@
-/**
-  *
-  *File: 5-print_numbers.c
-  *
-  *Auth: Brennan D Baraban
-  *
-  */
-
 #include <stdio.h>
+
 
 /**
   *
@@ -22,14 +15,17 @@ int main(void)
 
 {
 
-int num;
+	int num;
 
-for (num = 0; num < 10; num++)
 
-printf("%d", num);
+	for (num = 0; num < 10; num++)
 
-printf("\n");
+		printf("%d", num);
 
-return (0);
+
+	printf("\n");
+
+
+	return (0);
 
 }
