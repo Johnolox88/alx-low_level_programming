@@ -2,25 +2,17 @@
 #include <ctype.h>
 
 /**
- * print_numbers - prints numbers from 0 to 9
- *
- * Return: 1 if c is a number else return 0
- *
- * @c: is a number
- *
+ * print_numbers - prints numbers from 0 to 9 followed by a new line
  */
  
 void print_numbers(void)
 {
-	int i = print_numbers();
+	int i = 0;
 
-	if (i > 0)
+	while (i <= 10)
 	{
-		return(1);
+		_putchar(i + '0');
+		i++;
 	}
-	else
-	{
-		return(0);
-	}
-
+	_putchar('\n');
 }
