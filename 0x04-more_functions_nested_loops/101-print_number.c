@@ -2,11 +2,9 @@
 #include <ctype.h>
 
 /**
- * print_number(int n) - prints an integer
+ * print_number(int n) - prints a
  *
- * Return: 1 if c is an integer, otherwise return o
- *
- * @c: is an integer
+ * @n: is the number to be printed
  *
  */
 
