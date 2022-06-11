@@ -4,11 +4,11 @@
  * print_most_numbers - prints the munbers from 0 to 9 followed by a new line
  */
 
-void print_most_numbers(void);
+void print_most_numbers(void)
 {
 	int i;
 
-	for (i = 48; i < 57; i++)
+	for (i = 48; i < 58; i++)
 	{
 		if (i == 50 || i == 52)
 		{
