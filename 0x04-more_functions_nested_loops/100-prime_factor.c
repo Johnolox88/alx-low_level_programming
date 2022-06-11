@@ -1,38 +1,29 @@
 #include <stdio.h>
-#include <math.h>
 
 /**
- * getMaxPrimeFactor - finds the maximum prime factor of a number
- *
+ *main - prime numbers
+ *Return: 0
  */
 
-int getMaxPrimeFactor(int n)
+int main(void)
 {
-	int i, max = -1;
-	while (n%2 == 0)
-	{
-		max = 2;
-		n = n/2
-	}
-	for ( i = 3; i <= sqrt(n); i=i+2)
-	{
-		while (n % i == 0)
-			
-			max = i;
-			n = n/i
-	}
-}
-if (n > 2)
-{
-	max = n;
-}
+	long num = 612852475143;
 
-return max;
-}
-main () {
+	long divisor = 2;
 
-	int n;
-	printf("Enter a number: ");
-	scanf("%d", &n);
-	printf("Max prime factor: %d", getMaxPrimeFactor(n));
+	long larg_prim = 0;
+
+	while (num != 1)
+	{
+		if (num % divisor == 0)
+		{
+			num = num / divisor;
+
+			larg_prim = divisor;
+		}
+		divisor += 1;
+	}
+	printf("%ld\n", larg_prim);
+
+	return (0);
 }
