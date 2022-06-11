@@ -5,7 +5,7 @@
  * @size: integer return type
  */
 
-void print_square(int size);
+void print_square(int size)
 {
 	int i = 0, j;
 
