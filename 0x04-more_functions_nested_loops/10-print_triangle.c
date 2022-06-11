@@ -1,25 +1,32 @@
 #include "main.h"
-#include <ctype.h>
 
 /**
- * print_triangle(int size) - prints a triangle followed by a line
+ * print_triangle - Prints a triangle
  *
- * Return: 1 if c is a special character, otherwise return 0
- *
- * @c: is a special character
- *
+ * @size: size of triangle
  */
+
 void print_triangle(int size);
 {
-	int i = print_triangle(int size);
+	int i, j, k;
 
-	if (i > 0)
+	if (size <= 0)
 	{
-		return (1);
+		_putchar('\n');
 	}
 	else
 	{
-		return (0);
+		for (i = 1; i <= size; i++)
+		{
+			for (j = size; j > i; j--)
+			{
+				_putchar(' ');
+			}
+			for (k = 1; k <= j; k++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
+		}
 	}
-
 }
