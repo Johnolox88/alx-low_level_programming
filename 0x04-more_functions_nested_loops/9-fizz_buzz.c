@@ -1,8 +1,10 @@
 #include <stdio.h>
 
 /**
+ * main - printing fizz buzz
  * printf - printing fizz buzz
  */
+
 int main(void)
 {
 	int i = 2, j = 1;
