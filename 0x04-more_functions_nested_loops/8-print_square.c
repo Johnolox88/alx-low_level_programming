@@ -1,25 +1,31 @@
 #include "main.h"
-#include <ctype.h>
 
 /**
- * print_square(int size) - prints a square followed by a line
- *
- * Return: 1 if c is a special character, otherwise return 0
- *
- * @c: is a special character
- *
+ * print_square - function that prints a square followed by a newline
+ * @size: integer return type
  */
+
 void print_square(int size);
 {
-	int i = print_square(int size);
+	int i = 0, j;
 
-	if ( i > 0)
+	if (size <= 0)
 	{
-		return (1);
+		_putchar('\n');
 	}
 	else
 	{
-		return (0);
-	}
+		while (i < size)
+		{
+			j = 0;
 
+			while (j < size)
+			{
+				_putchar('#');
+				j++;
+			}
+			_putchar('\n');
+			i++;
+		}
+	}
 }

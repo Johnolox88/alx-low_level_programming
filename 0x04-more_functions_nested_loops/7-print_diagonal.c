@@ -1,25 +1,32 @@
 #include "main.h"
-#include <ctype>
 
 /**
- * print_diagonal(int n) - prints diagonal line at the terminal
+ * print_diagonal - prints a line n chars long
  *
- * Return: 1 if c is a special character otherwise return 0
+ * @n: number of \.
  *
- * @c: is a special character
- *
+ * Return: void.
  */
+
 void print_diagonal(int n);
 {
-	int i = print_diagonal(int n);
+	int i, space;
 	
-	if (i > 0)
+	if (n <= 0)
 	{
-		return (1)
+		_putchar('\n');
 	}
 	else
 	{
-		return (0);
-	}
+		for (i = 0; i < n; i++)
+		{
+			for (space = 0; space < i; space++)
+			{
+				_putchar(' ');
+			}
+			_putchar(92);
 
+			_putchar('\n');
+		}
+	}
 }
