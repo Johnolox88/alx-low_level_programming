@@ -1,24 +1,25 @@
 #include "main.h"
-#include <ctype.h>
 
 /**
- * print_line(int n) - draws a straight line in the terminal
- *
- * Return: 1 if c is a _ otherwise return 0
- *
- * @c: is a special character
- *
+ * print_line - function that draws a straight line in the terminal
+ * @n: char type
  */
+
 void print_line(int n);
 {
-	int i = print_line(int n);
-	if (i > 0)
+	int i = 0;
+	
+	while (i < n)
 	{
-		return (1);
-	}
-	else
-	{
-		return (0);
+		if (n <= 0)
+		{
+			_putchar('\n');
+		}
+		else
+		{
+			_putchar('_');
+		}
+		i++
 	}
 
 }
