@@ -13,4 +13,6 @@ void positive_or_negative(int i);
 
 int _putchar(char c);
 
+print_remaining_days()
+
 #endif /* MAIN_H */
