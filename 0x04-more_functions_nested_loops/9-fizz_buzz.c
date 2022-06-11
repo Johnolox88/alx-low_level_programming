@@ -3,6 +3,7 @@
 /**
  * main - printing fizz buzz
  * printf - printing fizz buzz
+ * Return: i => 1 otherwise return 0
  */
 
 int main(void)
