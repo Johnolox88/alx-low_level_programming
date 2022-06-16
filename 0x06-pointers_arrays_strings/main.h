@@ -10,5 +10,6 @@ int _strcmp(char *s1, char *s2);
 char *string_toupper(char *);
 char *cap_string(char *);
 int putchar(int c);
+char *leet(char *);
 int _putchar(char c);
 #endif
